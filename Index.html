@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jquery.popdown.css">
     <link rel="stylesheet" href="css/jcarousel.transitions.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
     <script src="js/modernizr.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.popdown.js"></script>
     <script src="js/jquery.jcarousel.js"></script>
     <script src="js/jcarousel.transitions.js"></script>
+    <script src="js/remodal.js"></script>
 </head>
 <script>
     $(document).ready(function () {
@@ -21,13 +24,13 @@
     });
 </script>
 <body>
-<div class="container">
+<div class="container remodal-bg">
     <div id="cabezera" class="row">
         <div class="col-md-4">
             <img id="perfil" src="img/Perfil.jpg">
         </div>
         <div id="titulo" class="col-md-8">
-            <h4>Pagina proyecto 2016</h4>
+            <h1>Pagina proyecto 2016</h1>
         </div>
     </div>
     <div class="row">
@@ -56,11 +59,11 @@
       </div>
     </div>
     <div class="row">
-        <div id="contenido">
+        <div id="contenido" class="col-md-8">
             <div class="jcarousel-wrapper">
                 <div class="jcarousel">
                     <ul>
-                        <li style="background: url('img/Video_Semanal_1.png');"><a href="#"><img src="img/link.png"></a></li>
+                        <li style="background: url('img/Video_Semanal_1.png');"><a href="#modal"><img src="img/link.png"></a></li>
                         <li style="background: url('img/Video_Semanal_2.jpg');"></li>
                         <li style="background: url('img/Video_Semamal_3.jpg');"></li>
                         <li style="background: url('img/Video_Semanal_4.jpg');"></li>
@@ -69,6 +72,39 @@
                 </div>
                 <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
                 <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            </div>
+        </div>
+        <div class="col-md-4" id="lateral">
+            <aside >
+                <h3>Caracteristicas de la pagina</h3>
+                <ul>
+                    <li>Videos de Gameplays</li>
+                    <li>Se intenta mantener actualizada</li>
+                    <li>Noticias Sobre el futuro del canal, casi siempre</li>
+                </ul>
+            </aside>
+        </div>
+        </div>
+
+        <!--Contenido de modal-->
+        <div class="remodal" data-remodal-id="modal">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h1>Bastion EP22</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6izrHdwxPv0" frameborder="0" allowfullscreen></iframe>
+            <br>
+
+        </div>
+
+        <div class="row">
+            <div id="redes" class="col-md-5">
+                <a href="http://www.facebook.com"><img class="cuarta" src="img/04.png"></a>
+                <a href="http://www.twitter.com"><img class="quinta" src="img/05.png"></a>
+            </div>
+            <div id="datos" class="col-md-7">
+                <ul>
+                    <li>Hector Aquez Godoy</li>
+                    <li>contacto@elsujeto.cl</li>
+                </ul>
             </div>
         </div>
     </div>
