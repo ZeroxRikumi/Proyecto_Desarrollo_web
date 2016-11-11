@@ -1,0 +1,43 @@
+body{
+    background-color: #2B4B6F;
+    font-family: Credit Valley;
+    color: red;
+}
+#perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+#frase h4{
+    font-size: 5ex;
+    text-align: center;
+    padding-top: 20px;
+}
+#cabezera{
+    background-color: #0B2F57;
+}
+
+#contenido{
+    background-color: #9098A0;
+}
+
+#lateral{
+    background-color: #576E87;
+    padding-bottom: 420px;
+}
+
+.jcarousel-wrapper{
+    height: 420px;
+    width: 620px;
+}
+img.cuarta , img.quinta {
+    padding-top: 4px;
+    padding-left: 10px;
+    height: 80px;
+    width: 80px;
+}
+#datos{
+    font-size: 3ex;
+    padding-left: 10px;
+    padding-top: 1px;
+}
